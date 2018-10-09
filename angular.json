@@ -116,6 +116,46 @@
           }
         }
       }
+    },
+    "ngx-ts-serializer": {
+      "root": "projects/ngx-ts-serializer",
+      "sourceRoot": "projects/ngx-ts-serializer/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-ts-serializer/tsconfig.lib.json",
+            "project": "projects/ngx-ts-serializer/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ngx-ts-serializer/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-ts-serializer/src/test.ts",
+            "tsConfig": "projects/ngx-ts-serializer/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-ts-serializer/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-ts-serializer/tsconfig.lib.json",
+              "projects/ngx-ts-serializer/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ngx-ts-serializer-app"
