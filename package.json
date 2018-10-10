@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "clean": "rm -rf dist",
+    "dist": "npm run clean && npm run lint && ng build ngx-ts-serializer --prod && cd dist/ngx-ts-serializer && npm publish"
   },
   "private": true,
   "dependencies": {
