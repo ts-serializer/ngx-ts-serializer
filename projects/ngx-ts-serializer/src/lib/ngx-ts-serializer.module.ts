@@ -4,7 +4,7 @@ import {ConverterStrategy, Serializer, SerializerConfiguration} from 'ts-seriali
 import {SERIALIZER_CONFIGURATION, SERIALIZER_CONVERTER_STRATEGY} from './ngx-ts-serializer.di';
 
 export function serializerFactory(configuration: SerializerConfiguration, converterStrategy: ConverterStrategy) {
-  return new NgxTsSerializerService(new Serializer(configuration, converterStrategy));
+  return new NgxTsSerializerService(new Serializer(configuration, [converterStrategy]));
 }
 
 @NgModule({
