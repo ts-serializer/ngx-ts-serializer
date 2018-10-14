@@ -18,14 +18,6 @@ import {NgxTsSerializerModule} from '../../projects/ngx-ts-serializer/src/lib/ng
     NgxTsSerializerModule
   ],
   providers: [
-    {
-      provide: SERIALIZER_CONFIGURATION,
-      useValue: new SerializerConfiguration()
-    },
-    {
-      provide: SERIALIZER_CONVERTER_STRATEGY,
-      useValue: new InstantiateConverterStrategy()
-    }
   ],
   bootstrap: [AppComponent]
 })
