@@ -6116,9 +6116,9 @@ ts-node@~5.0.1:
     source-map-support "^0.5.3"
     yn "^2.0.0"
 
-ts-serializer-core@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/ts-serializer-core/-/ts-serializer-core-1.0.8.tgz#65f778c4a891a7b2b708ed02b4a1b5259e8d60c8"
+ts-serializer-core@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/ts-serializer-core/-/ts-serializer-core-1.0.10.tgz#4daf27ecb05930b8b47dea45e9914b43a5cb8c79"
   dependencies:
     reflect-metadata "^0.1.12"
 
