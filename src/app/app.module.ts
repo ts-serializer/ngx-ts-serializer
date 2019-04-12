@@ -1,13 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import {
-  SERIALIZER_CONFIGURATION,
-  SERIALIZER_CONVERTER_STRATEGY
-} from '../../projects/ngx-ts-serializer/src/lib/ngx-ts-serializer.di';
-import {InstantiateConverterStrategy, SerializerConfiguration} from 'ts-serializer-core';
-import {NgxTsSerializerModule} from '../../projects/ngx-ts-serializer/src/lib/ngx-ts-serializer.module';
+import {AppComponent} from './app.component';
+import {NgxTsSerializerModule} from 'ngx-ts-serializer';
 
 @NgModule({
   declarations: [
@@ -17,8 +12,8 @@ import {NgxTsSerializerModule} from '../../projects/ngx-ts-serializer/src/lib/ng
     BrowserModule,
     NgxTsSerializerModule
   ],
-  providers: [
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

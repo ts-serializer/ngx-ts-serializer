@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {Hero} from './model/hero';
 import {Animal} from './model/animal';
 import {Weapon} from './model/weapon';
