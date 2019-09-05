@@ -1,15 +1,20 @@
 import {NgModule, Optional} from '@angular/core';
 import {NgxTsSerializerService} from './ngx-ts-serializer.service';
 import {ConverterStrategy, Deserializer, Serializer, SerializerConfiguration} from 'ts-serializer-core';
-import {SERIALIZER_CONFIGURATION, SERIALIZER_CONVERTER_STRATEGY} from './ngx-ts-serializer.di';
+import {
+  DESERIALIZER_CONFIGURATION,
+  SERIALIZER_CONFIGURATION,
+  SERIALIZER_CONVERTER_STRATEGY
+} from './ngx-ts-serializer.di';
 import {NgxTsDeserializerService} from './ngx-ts-deserializer.service';
+import {DeserializerConfiguration} from 'ts-serializer-core/lib/deserializer/deserializer-configuration';
 
 export function serializerFactory(configuration: SerializerConfiguration = null, converterStrategy: ConverterStrategy[] = null) {
   return new NgxTsSerializerService(new Serializer(configuration, converterStrategy));
 }
 
-export function deserializerFactory(converterStrategy: ConverterStrategy[] = null) {
-  return new NgxTsDeserializerService(new Deserializer(converterStrategy));
+export function deserializerFactory(configuration: DeserializerConfiguration = null, converterStrategy: ConverterStrategy[] = null) {
+  return new NgxTsDeserializerService(new Deserializer(configuration, converterStrategy));
 }
 
 @NgModule({
@@ -22,7 +27,7 @@ export function deserializerFactory(converterStrategy: ConverterStrategy[] = nul
     {
       provide: NgxTsDeserializerService,
       useFactory: deserializerFactory,
-      deps: [[new Optional(), SERIALIZER_CONVERTER_STRATEGY]]
+      deps: [[new Optional(), DESERIALIZER_CONFIGURATION], [new Optional(), SERIALIZER_CONVERTER_STRATEGY]]
     }
   ]
 })
