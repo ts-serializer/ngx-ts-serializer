@@ -2,7 +2,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {NgxTsSerializerModule} from 'ngx-ts-serializer';
+import {NgxTsSerializerModule} from '../../projects/ngx-ts-serializer/src/lib/ngx-ts-serializer.module';
 
 @NgModule({
   declarations: [
