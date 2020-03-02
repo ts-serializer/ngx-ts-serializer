@@ -7,5 +7,15 @@
   },
   "dependencies": {
     "ts-serializer-core": "^1.1.0-rc.1"
-  }
+  },
+  "author": "Thomas Nisole",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ts-serializer/ngx-ts-serializer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ts-serializer/ngx-ts-serializer/issues"
+  },
+  "homepage": "https://github.com/ts-serializer/ngx-ts-serializer#readme",
 }
