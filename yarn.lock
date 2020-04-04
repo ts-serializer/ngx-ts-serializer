@@ -241,6 +241,10 @@
   dependencies:
     "@types/jasmine" "*"
 
+"@types/lodash@^4.14.149":
+  version "4.14.149"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.149.tgz#1342d63d948c6062838fbf961012f74d4e638440"
+
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -402,8 +406,8 @@ acorn-dynamic-import@^3.0.0:
     acorn "^5.0.0"
 
 acorn@^5.0.0:
-  version "5.7.3"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.4.tgz#3e8d8a9947d0599a1796d10225d7432f4a4acf5e"
 
 adm-zip@0.4.4:
   version "0.4.4"
@@ -6222,10 +6226,12 @@ ts-node@~5.0.1:
     source-map-support "^0.5.3"
     yn "^2.0.0"
 
-ts-serializer-core@^1.0.16:
-  version "1.0.16"
-  resolved "https://registry.yarnpkg.com/ts-serializer-core/-/ts-serializer-core-1.0.16.tgz#2ab3bd4519de57bb7f36d689610761ac5e320d9c"
+ts-serializer-core@^1.1.0-rc.1:
+  version "1.1.0-rc.2"
+  resolved "https://registry.yarnpkg.com/ts-serializer-core/-/ts-serializer-core-1.1.0-rc.2.tgz#22ba3cc53524462f1ec311afa3a30d96d03f5d3f"
   dependencies:
+    "@types/lodash" "^4.14.149"
+    lodash "^4.17.15"
     reflect-metadata "^0.1.12"
 
 tsickle@^0.32.1:
