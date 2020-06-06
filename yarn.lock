@@ -241,6 +241,10 @@
   dependencies:
     "@types/jasmine" "*"
 
+"@types/lodash@^4.14.149":
+  version "4.14.155"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.155.tgz#e2b4514f46a261fd11542e47519c20ebce7bc23a"
+
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -6222,10 +6226,12 @@ ts-node@~5.0.1:
     source-map-support "^0.5.3"
     yn "^2.0.0"
 
-ts-serializer-core@^1.0.16:
-  version "1.0.16"
-  resolved "https://registry.yarnpkg.com/ts-serializer-core/-/ts-serializer-core-1.0.16.tgz#2ab3bd4519de57bb7f36d689610761ac5e320d9c"
+ts-serializer-core@^1.1.0-rc.1:
+  version "1.1.0-rc.2"
+  resolved "https://registry.yarnpkg.com/ts-serializer-core/-/ts-serializer-core-1.1.0-rc.2.tgz#22ba3cc53524462f1ec311afa3a30d96d03f5d3f"
   dependencies:
+    "@types/lodash" "^4.14.149"
+    lodash "^4.17.15"
     reflect-metadata "^0.1.12"
 
 tsickle@^0.32.1:
@@ -6704,8 +6710,8 @@ websocket-driver@>=0.5.1:
     websocket-extensions ">=0.1.1"
 
 websocket-extensions@>=0.1.1:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.4.tgz#7f8473bc839dfd87608adb95d7eb075211578a42"
 
 when@~3.6.x:
   version "3.6.4"
