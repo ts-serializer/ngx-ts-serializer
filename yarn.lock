@@ -241,6 +241,10 @@
   dependencies:
     "@types/jasmine" "*"
 
+"@types/lodash@^4.14.149":
+  version "4.14.172"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.172.tgz#aad774c28e7bfd7a67de25408e03ee5a8c3d028a"
+
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -4761,8 +4765,8 @@ path-key@^2.0.0, path-key@^2.0.1:
   resolved "https://registry.yarnpkg.com/path-key/-/path-key-2.0.1.tgz#411cadb574c5a140d3a4b1910d40d80cc9f40b40"
 
 path-parse@^1.0.5, path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
 
 path-to-regexp@0.1.7:
   version "0.1.7"
@@ -6222,10 +6226,12 @@ ts-node@~5.0.1:
     source-map-support "^0.5.3"
     yn "^2.0.0"
 
-ts-serializer-core@^1.0.16:
-  version "1.0.16"
-  resolved "https://registry.yarnpkg.com/ts-serializer-core/-/ts-serializer-core-1.0.16.tgz#2ab3bd4519de57bb7f36d689610761ac5e320d9c"
+ts-serializer-core@^1.1.0-rc.1:
+  version "1.1.0-rc.2"
+  resolved "https://registry.yarnpkg.com/ts-serializer-core/-/ts-serializer-core-1.1.0-rc.2.tgz#22ba3cc53524462f1ec311afa3a30d96d03f5d3f"
   dependencies:
+    "@types/lodash" "^4.14.149"
+    lodash "^4.17.15"
     reflect-metadata "^0.1.12"
 
 tsickle@^0.32.1:
