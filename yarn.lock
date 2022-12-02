@@ -241,6 +241,10 @@
   dependencies:
     "@types/jasmine" "*"
 
+"@types/lodash@^4.14.149":
+  version "4.14.191"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.191.tgz#09511e7f7cba275acd8b419ddac8da9a6a79e2fa"
+
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -1709,8 +1713,8 @@ decamelize@^1.1.1, decamelize@^1.1.2, decamelize@^1.2.0:
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
 
 deep-equal@^1.0.1:
   version "1.1.0"
@@ -6222,10 +6226,12 @@ ts-node@~5.0.1:
     source-map-support "^0.5.3"
     yn "^2.0.0"
 
-ts-serializer-core@^1.0.16:
-  version "1.0.16"
-  resolved "https://registry.yarnpkg.com/ts-serializer-core/-/ts-serializer-core-1.0.16.tgz#2ab3bd4519de57bb7f36d689610761ac5e320d9c"
+ts-serializer-core@^1.1.0-rc.1:
+  version "1.1.0-rc.2"
+  resolved "https://registry.yarnpkg.com/ts-serializer-core/-/ts-serializer-core-1.1.0-rc.2.tgz#22ba3cc53524462f1ec311afa3a30d96d03f5d3f"
   dependencies:
+    "@types/lodash" "^4.14.149"
+    lodash "^4.17.15"
     reflect-metadata "^0.1.12"
 
 tsickle@^0.32.1:
